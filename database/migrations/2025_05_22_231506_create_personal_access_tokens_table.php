@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('personal_access_tokens', function (Blueprint $table) {
             $table->id();
+            // Solução: Adicionar a chave de índice para o morphs
             $table->morphs('tokenable');
             $table->string('name');
             $table->string('token', 64)->unique();

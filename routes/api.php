@@ -4,9 +4,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/teste', function () {
-    return response()->json(['mensagem' => 'Chegou no laravel']);
+;
+
+Route::get('/ping', function () {
+    return response()->json(['status' => 'Laravel conectado com sucesso!']);
 });
+
 
 Route::get('/user', function (Request $request) {
     return $request->user();

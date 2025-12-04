@@ -18,6 +18,12 @@ Route::get('/cadastros', function () {
 Route::get('/outros', function () {
     return response()->json(['status' => 'Laravel conectado com sucesso!']);
 });
+Route::get('/outros', function () {
+    return response()->json(['status' => 'Laravel conectado com sucesso!']);
+});
+Route::get('/outros', function () {
+    return response()->json(['status' => 'Laravel conectado com sucesso!']);
+});
 
 
 Route::get('/user', function (Request $request) {
